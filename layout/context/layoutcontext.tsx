@@ -5,12 +5,7 @@ export const LayoutContext = createContext({} as LayoutContextProps);
 
 export const LayoutProvider = ({ children }: ChildContainerProps) => {
     const [layoutConfig, setLayoutConfig] = useState<LayoutConfig>({
-        ripple: false,
-        inputStyle: 'outlined',
         menuMode: 'static',
-        colorScheme: 'light',
-        theme: 'lara-light-indigo',
-        scale: 14
     });
 
     const [layoutState, setLayoutState] = useState<LayoutState>({
